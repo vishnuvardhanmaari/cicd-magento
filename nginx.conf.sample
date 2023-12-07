@@ -6,6 +6,7 @@
 #    server   unix:/var/run/php/php7.4-fpm.sock;
 # }
 # server {
+# thanks for configuration
 #    listen 80;
 #    server_name mage.dev;
 #    set $MAGE_ROOT /var/www/magento2;
