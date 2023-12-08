@@ -66,7 +66,7 @@ RUN { \
     } | tee /etc/msmtprc
 
 # # Start script, executed upon container creation from image
-COPY ./start.sh /start.sh
+COPY .codilar/start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Clean up APT and temp when done.
