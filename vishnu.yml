@@ -1,0 +1,60 @@
+format_version: 10
+pipelines:
+  First-pipeline:
+    group: defaultGroup
+    label_template: ${COUNT}
+    lock_behavior: none
+    display_order: -1
+    materials:
+      git-a66497e:
+        git: https://github.com/vishnuvardhanmaari/cicd-magento.git
+        username: vishnuvardhanmaari
+        shallow_clone: false
+        auto_update: true
+        branch: master
+        encrypted_password: AES:m1F/NyeNYIh9IT+UVqUKEg==:Jz5HZWo5MgRbW/+cT+zPUv49wjSqYQfXAaJKtCRfjL0dXcHo5qKENOjPZi+PE6Wr
+    stages:
+    - first-stage:
+        fetch_materials: true
+        keep_artifacts: false
+        clean_workspace: false
+        approval:
+          type: success
+          allow_only_on_success: false
+        jobs:
+          Firstjob:
+            timeout: 0
+            environment_variables:
+              vishnu: vardhan
+            tasks:
+            - exec:
+                arguments:
+                - Hii hello
+                command: echo
+                run_if: passed
+            - exec:
+                command: pwd
+                run_if: passed
+            - exec:
+                command: ls
+                run_if: passed
+            - exec:
+                arguments:
+                - status
+                command: git
+                run_if: passed
+            - exec:
+                arguments:
+                - ps
+                - -a
+                command: docker
+                run_if: passed
+            - exec:
+                arguments:
+                - -c
+                - echo $vishnu
+                - ''
+                command: /bin/bash
+                run_if: passed
+    parameters:
+      vishnu: '100'
