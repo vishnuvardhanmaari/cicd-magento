@@ -31,8 +31,8 @@ pipelines:
                 arguments:
                   - -c
                   - |
-                    pwd && ls
-                    docker images
+                    docker build -t vishnuvardhan95656/php7.4:latest .
+                    docker push vishnuvardhan95656/php7.4:latest
                 command: /bin/bash
                 run_if: passed 
            
