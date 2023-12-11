@@ -29,6 +29,7 @@ pipelines:
             tasks:
             - exec:
                 arguments:
+                  - -c
                   - pwd && ls
                   - docker images
                 command: /bin/bash
