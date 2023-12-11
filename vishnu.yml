@@ -29,32 +29,8 @@ pipelines:
             tasks:
             - exec:
                 arguments:
-                - Hii hello
-                command: echo
-                run_if: passed
-            - exec:
-                command: pwd
-                run_if: passed
-            - exec:
-                command: ls
-                run_if: passed
-            - exec:
-                arguments:
-                - status
-                command: git
-                run_if: passed
-            - exec:
-                arguments:
-                - ps
-                - -a
-                command: docker
-                run_if: passed
-            - exec:
-                arguments:
-                - -c
-                - echo $vishnu
-                - ''
+                - docker build -t vishnuvardhan95656/php7.4:latest .
+                - docker push vishnuvardhan95656/php7.4:latest 
                 command: /bin/bash
                 run_if: passed
-    parameters:
-      vishnu: '100'
+           
