@@ -30,8 +30,9 @@ pipelines:
             - exec:
                 arguments:
                   - -c
-                  - pwd && ls
-                  - docker images
+                  - |
+                    pwd && ls
+                    docker images
                 command: /bin/bash
                 run_if: passed 
            
