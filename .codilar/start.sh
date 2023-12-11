@@ -108,7 +108,7 @@ function magento_database_config {
 
 #          echo "${blue}${bold}User $MAGENTO_USER created${normal}"
     # fi
-}
+#}
 function magento_commands {
     bin/magento se:up && bin/magento se:st:de -f && bin/magento se:di:com && bin/magento ind:reind && bin/magento c:c && chmod -R 777 var/ pub/ generated/
 }
