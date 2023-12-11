@@ -23,10 +23,10 @@
 ## PHP entry point blocks, which are indicated below. You can pass
 ## it in using:
 ##
-## fastcgi_param  MAGE_MODE $MAGE_MODE;
+## fastcgi_param  MAGE_MODE $MAGE_MODE; 
 ##
 ## In production mode, you should uncomment the 'expires' directive in the /static/ location block
-
+## commented
 root $MAGE_ROOT/pub;
 
 index index.php;
