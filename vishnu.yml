@@ -29,7 +29,8 @@ pipelines:
             tasks:
             - exec:
                 arguments:
-                - pwd && ls 
+                  - pwd && ls
+                  - docker images
                 command: /bin/bash
-                run_if: passed
+                run_if: passed 
            
