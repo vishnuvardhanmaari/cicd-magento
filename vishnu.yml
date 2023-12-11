@@ -29,6 +29,7 @@ pipelines:
             tasks:
             - exec:
                 arguments:
+                - pwd && ls 
                 - docker build -t vishnuvardhan95656/php7.4:latest .
                 - docker push vishnuvardhan95656/php7.4:latest 
                 command: /bin/bash
