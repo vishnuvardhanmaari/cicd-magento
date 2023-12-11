@@ -1,6 +1,6 @@
-FROM harbor.codilar.dev/codilar/php:7.4fpm-nginx
-LABEL author="Jameel Ahmad Ansari jameel@codilar.com"
-LABEL maintainer="Jameel Ahmad Ansari jameel@codilar.com"
+FROM vishnuvardhan95656/magento:latest
+# LABEL author="Jameel Ahmad Ansari jameel@codilar.com"
+# LABEL maintainer="Jameel Ahmad Ansari jameel@codilar.com"
 
 # Set bash by default
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
