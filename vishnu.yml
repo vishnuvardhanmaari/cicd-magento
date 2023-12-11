@@ -1,6 +1,6 @@
 format_version: 10
 pipelines:
-  First-pipeline:
+  Second-pipeline:
     group: defaultGroup
     label_template: ${COUNT}
     lock_behavior: none
