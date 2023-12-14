@@ -74,7 +74,8 @@ export bash_colors
 #   fi
 # }
 function copy_files {
-  cp -r /var/www/magento /var/www/html
+  cp -r /var/www/magento /var/www/html 
+  }
 function composer_install {
   # Check if COMPOSER_AUTH environment variable exists
   # if [ -z ${COMPOSER_AUTH+x} ]; then echo "Please set COMPOSER_AUTH environment variable" && exit 1; fi
@@ -248,6 +249,7 @@ function magento_commands {
 # Switch current execution directory to WORKDIR (BASEPATH)
 # in_basepath
 # Installing PHP Composer and packages
+copy_files
 composer_install
 
 # Flushing Magento configuration in Redis
