@@ -73,7 +73,8 @@ export bash_colors
 #     exit 1
 #   fi
 # }
-
+function copy_files {
+  cp -r /var/www/magento /var/www/html
 function composer_install {
   # Check if COMPOSER_AUTH environment variable exists
   # if [ -z ${COMPOSER_AUTH+x} ]; then echo "Please set COMPOSER_AUTH environment variable" && exit 1; fi
