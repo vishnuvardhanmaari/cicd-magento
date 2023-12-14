@@ -74,8 +74,8 @@ export bash_colors
 #   fi
 # }
 function copy_files {
-  mkdir -p /var/www/html
-  cp -r /var/www/magento /var/www/html 
+  cp -rf /var/www/magento/* /var/www/html/
+  rm -rf /var/www/magento
   }
 function composer_install {
   # Check if COMPOSER_AUTH environment variable exists
