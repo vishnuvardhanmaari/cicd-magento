@@ -74,6 +74,7 @@ export bash_colors
 #   fi
 # }
 function copy_files {
+  mkdir -p /var/www/html
   cp -r /var/www/magento /var/www/html 
   }
 function composer_install {
