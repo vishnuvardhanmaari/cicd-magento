@@ -77,7 +77,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
 # Copy project files
-COPY . /var/www/html
+COPY . /var/www/magento
 EXPOSE 80 
 EXPOSE 9000
 
