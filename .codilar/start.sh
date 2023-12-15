@@ -93,7 +93,7 @@ composer install
 }
 
 function magento_database_config {
-  bin/magento setup:install  --base-url="http://magento.local/"  --db-host="mysql"  --db-name="magento"  --db-user="root"  --db-password="Codilar1"  --admin-firstname="admin"  --admin-lastname="admin"  --admin-email="admin@admin.com"  --admin-user="admin"  --admin-password="admin123"  --language="en_US"  --currency="USD"   --timezone="America/Chicago"   --use-rewrites="1"  --backend-frontname="admin"  --elasticsearch-host=elasticsearch --elasticsearch-port=9200
+  bin/magento setup:install  --base-url-secure="https://vishnu.codilar.in/"  --db-host="mysql"  --db-name="magento"  --db-user="root"  --db-password="Codilar1"  --admin-firstname="admin"  --admin-lastname="admin"  --admin-email="admin@admin.com"  --admin-user="admin"  --admin-password="admin123"  --language="en_US"  --currency="USD"   --timezone="America/Chicago"   --use-rewrites="1"  --backend-frontname="admin"  --elasticsearch-host=elasticsearch --elasticsearch-port=9200
 
 }
 
