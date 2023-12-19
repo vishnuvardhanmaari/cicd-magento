@@ -41,6 +41,7 @@ pipelines:
                 arguments:
                   - -c
                   - echo $GO_PIPELINE_COUNTER
+                  - echo "Its Working"
                 command: /bin/bash
                 run_if: passed 
            
