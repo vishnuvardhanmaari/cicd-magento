@@ -32,7 +32,9 @@ pipelines:
                   - -c
                   - |
                     docker build -t vishnuvardhan95656/php7.4:latest .
+                    docker tag vishnuvardhan95656/php7.4:latest vishnuvardhan95656/php7.4:$GO_PIPELINE_COUNTER
                     docker push vishnuvardhan95656/php7.4:latest
+                    docker push vishnuvardhan95656/php7.4:$GO_PIPELINE_COUNTER
                 command: /bin/bash
                 run_if: passed 
             - exec:
