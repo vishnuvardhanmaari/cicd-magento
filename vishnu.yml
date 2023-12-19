@@ -35,4 +35,10 @@ pipelines:
                     docker push vishnuvardhan95656/php7.4:latest
                 command: /bin/bash
                 run_if: passed 
+            - exec:
+                arguments:
+                  - -c
+                  - echo $GO_PIPELINE_COUNTER
+                command: /bin/bash
+                run_if: passed 
            
